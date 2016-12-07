@@ -6,9 +6,12 @@ import { Sensor } from './sensor';
 })
 export class FilterSensorPipe implements PipeTransform {
 
-  transform(value, [category] : string[]) {
+  transform(value, category) {
+    console.log(category);
+    console.log(value);
     return value.filter((entry: Sensor) => {
           if (category && category !== '') {
+            console.log('filtersensor' + entry + category);
             return entry.type === category;
           } else {
             return true;

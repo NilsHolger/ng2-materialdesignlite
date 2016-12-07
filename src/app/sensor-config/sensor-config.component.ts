@@ -11,6 +11,8 @@ import { SensorsService } from '../sensors.service';
   styleUrls: ['./sensor-config.component.css']
 })
 export class SensorConfigComponent implements OnInit {
+  //  @Input()
+  // sensors: Sensor[];
   private sensors: Sensor[];
   constructor(private sensorsService: SensorsService) { }
   ngOnInit() {}

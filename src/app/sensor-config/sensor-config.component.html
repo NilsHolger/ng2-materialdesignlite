@@ -10,9 +10,9 @@
   </div>
 
   <hr>
-          <sensor-filter #filterCmp (filterChanges)="refreshSensors()"></sensor-filter>
+          <app-sensor-filter #filterCmp (filterChanges)="refreshSensors()"></app-sensor-filter>
   <hr>
 
-    <app-sensor-list [sensors]="sensors | filterSensor: filterCmp.selectedCategory"></app-sensor-list>
+    <app-sensor-list [sensors]="sensors | filtersensor: 'humidity'"></app-sensor-list>
 
 </div>

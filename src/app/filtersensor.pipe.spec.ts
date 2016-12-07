@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { FiltersensorPipe } from './filtersensor.pipe';
+import { FilterSensorPipe } from './filtersensor.pipe';
 
 describe('FiltersensorPipe', () => {
   it('create an instance', () => {
-    let pipe = new FiltersensorPipe();
+    let pipe = new FilterSensorPipe();
     expect(pipe).toBeTruthy();
   });
 });

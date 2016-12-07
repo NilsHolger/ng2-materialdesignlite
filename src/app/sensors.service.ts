@@ -8,7 +8,8 @@ export class SensorsService {
   constructor(private http: Http) { }
 
   discoverSensors() {
-    return this.http.get('/assets/data/newsensors.json');
+    console.log('in service' + this.http.get('./assets/data/newsensors.json'));
+    return this.http.get('./assets/data/newsensors.json');
   }
 
 }
